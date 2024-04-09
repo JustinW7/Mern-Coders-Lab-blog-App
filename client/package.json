@@ -15,6 +15,7 @@
     "flowbite-react": "^0.7.6",
     "icons": "^1.0.0",
     "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
@@ -24,6 +25,7 @@
     "redux-persist": "^6.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react-swc": "^3.5.0",
@@ -33,6 +35,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
+    "tailwind-scrollbar": "^3.1.0",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
   }
