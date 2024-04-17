@@ -8,7 +8,7 @@ export default function About() {
           </h1>
           <div className='text-md text-gray-500 flex flex-col gap-6'>
             <p>
-              Welcome to Justin's Blog! This blog was created by Justin Ghavidel
+              Welcome to CODER'S LAB! This blog was created by Justin Varghese
               as a personal project to share his thoughts and ideas with the
               world. Justin is a passionate developer who loves to write about
               technology, coding, and everything in between.
