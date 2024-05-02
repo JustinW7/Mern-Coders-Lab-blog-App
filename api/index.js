@@ -6,50 +6,41 @@ import authRoutes from './routes/auth.route.js';
 import postRoutes from './routes/post.route.js';
 import commentRoutes from './routes/comment.route.js';
 import cookieParser from 'cookie-parser';
-import cors from 'cors';
 import path from 'path';
-
-
-
 
 dotenv.config();
 
-// MongoDB connection
-mongoose.connect(process.env.MONGO)
+mongoose
+  .connect(process.env.MONGO)
   .then(() => {
-    console.log('MongoDB connected');
+    console.log('MongoDb is connected');
   })
   .catch((err) => {
-    console.error('MongoDB connection error:', err);
+    console.log(err);
   });
-  const __dirname=path.resolve();
+
+const __dirname = path.resolve();
 
 const app = express();
 
-// Middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({origin: "http://localhost:5174"}));
 
-// Stripe
-
-
-// Routes
-app.use('/api/user',userRoutes);
-app.use('/api/auth',authRoutes);
-app.use('/api/post',postRoutes);
-app.use('/api/comment',commentRoutes);
-
-
-app.use(express.static(path.join(__dirname,'client/dist')));
-
-app.get('*',(req,res)=>{
-  res.sendFile(path.join(__dirname,'client','dist','index.html'));
+app.listen(3000, () => {
+  console.log('Server is running on port 3000!');
 });
-// Stripe Checkout
 
+app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/post', postRoutes);
+app.use('/api/comment', commentRoutes);
 
-// Error handling middleware
+app.use(express.static(path.join(__dirname, '/client/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
+
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
   const message = err.message || 'Internal Server Error';
@@ -58,10 +49,4 @@ app.use((err, req, res, next) => {
     statusCode,
     message,
   });
-});
-
-// Server
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
 });
