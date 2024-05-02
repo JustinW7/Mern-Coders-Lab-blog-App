@@ -32,7 +32,7 @@ app.use(cookieParser());
 app.use(cors({origin: "http://localhost:5174"}));
 
 // Stripe
-const stripe = require("stripe")(process.env.SECRET_STRIPE_KEY);
+
 
 // Routes
 app.use('/api/user',userRoutes);
