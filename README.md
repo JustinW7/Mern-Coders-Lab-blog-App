@@ -1,57 +1,115 @@
-Coder's Lab,A blog app that is developed using Mern Stack ,
-Features 
-Register and Login using Firebase
-Create,Read,Edit and Updtate  blog posts,
-Responsive, 
-Dark Theme,
-View dashboard,
-like,
-Create
-comment blogs 
-
-How to run the project 
-
-Backend Start:Npm start - api start - 
-frontend start :Npm run dev - client start - 
-
-Dependencies used for frontend 
-
-Flowbite and Tailwind for styling 
-MongoDb for database 
-Moment -date and time 
-React quill - text editor 
-Flowbite - styling 
-Firebase -google authentication 
-Redux -persist - user to be present This ensures that the state persists even if the user refreshes the page or closes and reopens the browser.
-React router dom - paths to without refreshing for routing to the pages 
-React dom- dom manipulation 
-Responsives - navbar collapse is used for that using Tailwind and Flowbite 
-Dark Theme -FaMoon package is used for that 
+🚀 Excited to introduce my latest MERN project: Coder's Lab! 🚀
 
 
 
-Dependies used for  backend 
-Bcryptjs - hashing password 
-Jsonwebtoken -
+🎉 Features:
 
-JSON Web Tokens (JWT) are used for securely transmitting information between parties as a JSON object. They are commonly used in web applications for authentication and authorization purposes. Here's why JSON Web Tokens (JWT) are used:
+Write and edit blog posts
 
-Cookieparser - 
-Cookie-parser is a middleware for Express.js, a popular web application framework for Node.js. It's used to parse cookies attached to the client's request object.
+Google login for quick access
 
-Nodemon - for faster updates on server 
+Like, comment, and delete posts and comments
 
-Google authentication for signin and sign up 
-Profile photo and post photos are stored in firebase 
-Api -routes -only signed in  users can create posts for that verifyUsers 
-Mongodb for storing - bcrptjs for hashing the password for protection 
-Private Routes for without going to dashboard who are not signed -src/components- private routes 
-Can be used as readers and creators , only  creators made as admin only can view dashboard for that we need to make admin : true in mongodb 
-For default : model 
+Fully responsive design
 
-Mongodb is used for databases : for that a schema is used for every part 
+Dark theme mode
 
-Dashboard functionalities for analytics 
-HTTP methods are used for DashProfile 
+Edit and delete blog posts
+
+Seamless user interaction with likes and comments
 
 
+
+
+
+💻 Tech Stack:
+
+Frontend: React, Redux, Tailwind CSS, Flowbite, React Quill, React Router DOM
+
+Backend: Node.js, Express
+
+Database: MongoDB
+
+
+
+🔧 Frontend Dependencies:
+
+Flowbite & Tailwind CSS: For styling
+
+Moment.js: Handling date and time
+
+React Quill: Rich text editor
+
+Firebase: Google authentication
+
+Redux Persist: Maintains state even after a refresh
+
+
+
+🔧 Backend Dependencies:
+
+Bcryptjs: Password hashing
+
+Jsonwebtoken (JWT): Secure authentication and authorization
+
+Cookie-parser: Parses cookies
+
+Nodemon: Speeds up server updates
+
+
+
+🛠 Core Functionalities:
+
+Frontend:
+
+Responsive design using Tailwind CSS and Flowbite
+
+Dark theme implementation with FaMoon package
+
+Hamburger menu with Navbar Collapse and Toggle from Flowbite React
+
+
+
+Backend:
+
+Google authentication for sign-in and sign-up
+
+Profile and post photos stored in Firebase
+
+Secure routes with user verification
+
+Private routes for creators/admins
+
+Admin functionalities for managing comments and posts
+
+User roles with admin privileges in MongoDB
+
+Dashboard for analytics and profile management
+
+
+
+
+
+🛠 Additional Features:
+
+useSelector & useDispatch: For seamless interaction with Redux store
+
+Middleware: Efficient error handling and time-saving
+
+JWT Tokens & Redux Toolkit: Secure and efficient state management
+
+E.preventdefault: Prevents page refresh for a smooth user experience
+
+
+
+
+
+🎉 Explore Coder's Lab! 🎉 A platform for both readers and creators. Only creators with admin roles can view the dashboard. Mongoose schema ensures structured data storage in MongoDB. Passwords are securely hashed, and only authenticated users can create posts.
+
+Join now and dive into the world of blogging with Coder's Lab!
+
+Github Repo : https://github.com/JustinW7/Mern-Coders-Lab-blog-App
+
+
+
+#MERN #React #NodeJS #Express #MongoDB #WebDevelopment #Coding #BloggingPlatform #GoogleAuth #ResponsiveDesign #DarkTheme #TechCommunity #FullStackDevelopment
